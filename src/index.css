@@ -982,6 +982,35 @@ address.nextSlide {
   touch-action: manipulation;
   width: 100%;
 }
+/* tenu de travail */
+.tenu-container-1 {
+  margin-top: 5rem;
+}
+.tenu-product {
+  margin: 2rem;
+  color: var(--clr-black);
+}
+.img-tenu:hover {
+  transform: scale(1.2);
+}
+.img-tenu {
+  width: 100%;
+  height: 600px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+@media (min-width: 768px) {
+  .tenu-container-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .tenu-container-1 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 /* form */
 .contact-center {
@@ -990,7 +1019,9 @@ address.nextSlide {
   font-family: var(--primary-font3);
 }
 .contact-title h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-family: var(--primary-font7);
+  font-weight: 300;
 }
 
 .contact-info h3 {
